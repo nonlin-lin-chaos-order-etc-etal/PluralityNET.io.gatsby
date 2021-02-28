@@ -10,6 +10,7 @@ const BackgroundColor = ({ data, location }) => (
     location={location}
     imageBackgroundColor="#11CE3E"
   >
+  {/*
     <PageTitle>Background Color</PageTitle>
     <FloatingImage
       title={`“${data.floatingImage.title}” by ${data.floatingImage.credit} (via namecheap.com)`}
@@ -32,6 +33,7 @@ const BackgroundColor = ({ data, location }) => (
       backgroundColor="#11CE3E"
       title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit}`}
     />
+  */}
   </Layout>
 )
 
