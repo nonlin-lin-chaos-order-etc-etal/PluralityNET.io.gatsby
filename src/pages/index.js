@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Helmet from 'react-helmet'
 
 import favicon from '../images/favicon.ico'
-    <Helmet>
-      <link rel="icon" href={favicon} />
-    </Helmet>
-    
+
 import '../styles/index.css';
 
 import { graphql } from "gatsby"

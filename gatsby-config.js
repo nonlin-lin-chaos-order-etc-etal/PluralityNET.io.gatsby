@@ -2,7 +2,7 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Node.js (TypeScript) API',
+    title: 'PluralityNET',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -12,7 +12,7 @@ module.exports = {
         name: 'PluralityNET',
         short_name: 'PluralityNET',
         start_url: '/',
-        icon: 'content/images/logo/vector/isolated-layout.svg',
+        icon: 'src/images/favicon.ico',
       },
     },
     `gatsby-plugin-emotion`,
