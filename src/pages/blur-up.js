@@ -10,13 +10,13 @@ const BlurUp = ({ data, location }) => (
   <Layout
     location={location}
     image={data.coverImage.localFile.childImageSharp.fluid}
-    imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit} (via unsplash.com)`}
+    imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit} (via namecheap.com)`}
   >
     <PageTitle>Blur Up</PageTitle>
     <FloatingImage
       imageMobile={data.floatingImageMobile.localFile.childImageSharp.fixed}
       imageDesktop={data.floatingImage.localFile.childImageSharp.fixed}
-      title={`“${data.floatingImage.title}” by ${data.floatingImage.credit} (via unsplash.com)`}
+      title={`“${data.floatingImage.title}” by ${data.floatingImage.credit} (via namecheap.com)`}
     />
 
     <p>
@@ -42,7 +42,7 @@ const BlurUp = ({ data, location }) => (
     </p>
     <Img
       fluid={data.fullWidthImage.localFile.childImageSharp.fluid}
-      title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit} (via unsplash.com)`}
+      title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit} (via namecheap.com)`}
     />
   </Layout>
 )
@@ -51,7 +51,7 @@ export default BlurUp
 
 export const query = graphql`
   query {
-    coverImage: unsplashImagesYaml(title: { eq: "Plant with leaves" }) {
+    coverImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -62,7 +62,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImageMobile: unsplashImagesYaml(title: { eq: "Pug with hoodie" }) {
+    floatingImageMobile: PluralityNETImagesYaml(title: { eq: "icon" }) {
       localFile {
         childImageSharp {
           fixed(width: 120) {
@@ -71,7 +71,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImage: unsplashImagesYaml(title: { eq: "Pug with hoodie" }) {
+    floatingImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -82,7 +82,7 @@ export const query = graphql`
         }
       }
     }
-    fullWidthImage: unsplashImagesYaml(title: { eq: "Alien in the forest" }) {
+    fullWidthImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {

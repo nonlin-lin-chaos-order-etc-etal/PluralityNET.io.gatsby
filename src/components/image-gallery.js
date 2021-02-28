@@ -95,7 +95,7 @@ const ImageGallery = edges => (
         <GridItem key={index}>
           <GridItemImage
             fluid={image.node.localFile.childImageSharp.fluid}
-            title={`“${image.node.title}” by ${image.node.credit} (via unsplash.com)`}
+            title={`“${image.node.title}” by ${image.node.credit} (via namecheap.com)`}
           />
           <Badge>
             SVG

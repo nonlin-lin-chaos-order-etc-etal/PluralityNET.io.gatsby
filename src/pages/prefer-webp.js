@@ -10,13 +10,13 @@ const PreferWebp = ({ data, location }) => (
   <Layout
     location={location}
     image={data.coverImage.localFile.childImageSharp.fluid}
-    imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit} (via unsplash.com)`}
+    imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit} (via namecheap.com)`}
   >
     <PageTitle>Prefer WebP</PageTitle>
     <FloatingImage
       imageMobile={data.floatingImageMobile.localFile.childImageSharp.fixed}
       imageDesktop={data.floatingImage.localFile.childImageSharp.fixed}
-      title={`“${data.floatingImage.title}” by ${data.floatingImage.credit} (via unsplash.com)`}
+      title={`“${data.floatingImage.title}” by ${data.floatingImage.credit} (via namecheap.com)`}
     />
     <p>
       WebP is a modern image format that provides both lossless and lossy
@@ -33,7 +33,7 @@ const PreferWebp = ({ data, location }) => (
     </p>
     <Img
       fluid={data.fullWidthImage.localFile.childImageSharp.fluid}
-      title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit} (via unsplash.com)`}
+      title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit} (via namecheap.com)`}
     />
     <p />
   </Layout>
@@ -43,7 +43,7 @@ export default PreferWebp
 
 export const query = graphql`
   query {
-    coverImage: unsplashImagesYaml(title: { eq: "Pug with yellow raincoat" }) {
+    coverImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -54,7 +54,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImageMobile: unsplashImagesYaml(title: { eq: "Cacti" }) {
+    floatingImageMobile: PluralityNETImagesYaml(title: { eq: "icon" }) {
       localFile {
         childImageSharp {
           fixed(width: 120) {
@@ -63,7 +63,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImage: unsplashImagesYaml(title: { eq: "Cacti" }) {
+    floatingImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -74,7 +74,7 @@ export const query = graphql`
         }
       }
     }
-    fullWidthImage: unsplashImagesYaml(title: { eq: "Tennis court" }) {
+    fullWidthImage: PluralityNETImagesYaml(title: { eq: "Tennis court" }) {
       credit
       title
       localFile {

@@ -16,7 +16,7 @@ const BackgroundColor = ({ data, location }) => (
     <FloatingImage
       imageMobile={data.floatingImageMobile.localFile.childImageSharp.fixed}
       imageDesktop={data.floatingImage.localFile.childImageSharp.fixed}
-      title={`“${data.floatingImage.title}” by ${data.floatingImage.credit} (via unsplash.com)`}
+      title={`“${data.floatingImage.title}” by ${data.floatingImage.credit} (via namecheap.com)`}
       backgroundColor="#11CE3E"
     />
     <p>
@@ -44,7 +44,7 @@ export default BackgroundColor
 
 export const query = graphql`
   query {
-    coverImage: unsplashImagesYaml(title: { eq: "Cactus" }) {
+    coverImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -55,7 +55,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImageMobile: unsplashImagesYaml(title: { eq: "Pug with red hat" }) {
+    floatingImageMobile: PluralityNETImagesYaml(title: { eq: "icon" }) {
       localFile {
         childImageSharp {
           fixed(width: 120) {
@@ -64,7 +64,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImage: unsplashImagesYaml(title: { eq: "Pug with red hat" }) {
+    floatingImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -75,7 +75,7 @@ export const query = graphql`
         }
       }
     }
-    fullWidthImage: unsplashImagesYaml(title: { eq: "Cacti" }) {
+    fullWidthImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {

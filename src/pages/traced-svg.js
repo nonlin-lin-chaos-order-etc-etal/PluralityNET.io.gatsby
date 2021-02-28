@@ -12,13 +12,13 @@ const TracedSVG = ({ data, location }) => (
   <Layout
     location={location}
     image={data.coverImage.localFile.childImageSharp.fluid}
-    imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit} (via unsplash.com)`}
+    imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit} (via namecheap.com)`}
   >
     <PageTitle>Traced SVG Placeholders</PageTitle>
     <FloatingImage
       imageMobile={data.floatingImageMobile.localFile.childImageSharp.fixed}
       imageDesktop={data.floatingImage.localFile.childImageSharp.fixed}
-      title={`“${data.floatingImage.title}” by ${data.floatingImage.credit} (via unsplash.com)`}
+      title={`“${data.floatingImage.title}” by ${data.floatingImage.credit} (via namecheap.com)`}
     />
     <p>
       Generates a{` `}
@@ -36,11 +36,11 @@ const TracedSVG = ({ data, location }) => (
       </a>
       .
     </p>
-    <h2>Unsplash SVG Image Gallery</h2>
+    <h2>SVG Image Gallery</h2>
     <ImageGallery images={data.galleryImagesCropped.edges} />
     <Img
       fluid={data.fullWidthImage.localFile.childImageSharp.fluid}
-      title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit} (via unsplash.com)`}
+      title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit} (via namecheap.com)`}
     />
   </Layout>
 )
@@ -49,22 +49,22 @@ export default TracedSVG
 
 export const query = graphql`
   query {
-    coverImage: unsplashImagesYaml(title: { eq: "Polaroid Pronto 600" }) {
+    coverImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
         childImageSharp {
           fluid(
             maxWidth: 720
-            traceSVG: { background: "#fff", color: "#663399" }
+            traceSVG: { background: "#11CE3E", color: "#0F5D25" }
           ) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
     }
-    floatingImageMobile: unsplashImagesYaml(
-      title: { eq: "Pug without hoodie" }
+    floatingImageMobile: PluralityNETImagesYaml(
+      title: { eq: "icon" }
     ) {
       localFile {
         childImageSharp {
@@ -74,7 +74,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImage: unsplashImagesYaml(title: { eq: "Pug without hoodie" }) {
+    floatingImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -85,7 +85,7 @@ export const query = graphql`
         }
       }
     }
-    fullWidthImage: unsplashImagesYaml(title: { eq: "City from above" }) {
+    fullWidthImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -96,7 +96,7 @@ export const query = graphql`
         }
       }
     }
-    galleryImages: allUnsplashImagesYaml(
+    galleryImages: allPluralityNETImagesYaml(
       filter: { gallery: { eq: true } }
       limit: 10
     ) {
@@ -118,7 +118,7 @@ export const query = graphql`
         }
       }
     }
-    galleryImagesCropped: allUnsplashImagesYaml(
+    galleryImagesCropped: allPluralityNETImagesYaml(
       filter: { gallery: { eq: true } }
       skip: 10
     ) {
