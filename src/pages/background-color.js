@@ -8,8 +8,6 @@ import Layout from "../components/layout"
 const BackgroundColor = ({ data, location }) => (
   <Layout
     location={location}
-    image={data.coverImage.localFile.childImageSharp.fluid}
-    imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit}`}
     imageBackgroundColor="#11CE3E"
   >
     <PageTitle>Background Color</PageTitle>
