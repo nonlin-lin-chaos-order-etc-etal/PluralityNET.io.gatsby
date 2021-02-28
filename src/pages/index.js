@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import '../styles/index.css';
+import LogoDefault from '../components/LogoDefault';
 
 function Index() {
   const [date, setDate] = useState(null);
@@ -17,7 +18,7 @@ function Index() {
       <Helmet>
         <title>PluralityNET</title>
       </Helmet>
-      <img src="/src/images/logo/vector/default.svg"/>
+      <LogoDefault/>
       <hr noshade/>
       <p>Copyright © 2021, {date ? date : 'Loading date...'} PluralityNET.io. All Rights Reserved.</p>
     </main>

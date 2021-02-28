@@ -1,3 +1,5 @@
+const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby + Node.js (TypeScript) API',
@@ -7,11 +9,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatsby + Node.js (TypeScript) API',
-        short_name: 'Gatsby + Node.js (TypeScript)',
+        name: 'PluralityNET',
+        short_name: 'PluralityNET',
         start_url: '/',
-        icon: 'src/images/gatsby-icon.png',
+        icon: 'src/images/logo/vector/isolated-layout.svg',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };
