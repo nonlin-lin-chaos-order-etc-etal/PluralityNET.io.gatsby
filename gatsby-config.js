@@ -12,7 +12,7 @@ module.exports = {
         name: 'PluralityNET',
         short_name: 'PluralityNET',
         start_url: '/',
-        icon: 'src/images/favicon.ico',
+        icon: 'src/images/favicon.png',
       },
     },
     `gatsby-plugin-emotion`,
