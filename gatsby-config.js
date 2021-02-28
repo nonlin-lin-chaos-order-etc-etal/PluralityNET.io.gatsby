@@ -15,13 +15,29 @@ module.exports = {
         icon: 'src/images/logo/vector/isolated-layout.svg',
       },
     },
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: path.join(__dirname, `src`, `images`),
+        name: `content`,
+        path: `${__dirname}/content`,
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-remote-images`,
+      options: {
+        filter: node => node.internal.type === `UnsplashImagesYaml`,
+      },
+    },
   ],
 };
