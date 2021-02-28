@@ -95,7 +95,6 @@ const Index = ({ data, location }) => {
   /*return (
     <main>
       <Helmet>
-        <title>PluralityNET</title>
       </Helmet>
     </main>
   );*/
@@ -105,6 +104,7 @@ const Index = ({ data, location }) => {
     imageBackgroundColor={"#11CE3E"}
    >
         <Helmet>
+            <title>PluralityNET</title>
             <link rel="icon" href={favicon} />
         </Helmet>
         
