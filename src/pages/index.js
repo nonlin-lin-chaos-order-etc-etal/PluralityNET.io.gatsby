@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
-//import { Helmet } from 'react-helmet';
+import Helmet from 'react-helmet'
+
+import favicon from '../images/favicon.ico'
+    <Helmet>
+      <link rel="icon" href={favicon} />
+    </Helmet>
+    
 import '../styles/index.css';
 
 import { graphql } from "gatsby"
@@ -101,6 +107,10 @@ const Index = ({ data, location }) => {
     location={location}
     imageBackgroundColor={"#11CE3E"}
    >
+        <Helmet>
+            <link rel="icon" href={favicon} />
+        </Helmet>
+        
         {/*<Image 
             svg = {data.svg}
             fluid = {data.fluid}
