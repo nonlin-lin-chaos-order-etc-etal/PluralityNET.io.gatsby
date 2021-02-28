@@ -1,18 +1,49 @@
+html {
+  max-height: 100vh;
+}
 body {
   background-color: #11CE3E;
+  color: white;
+}
+.copyright {
+    font-weight: 500;
+    font-style: italic;
+}
+.poweredby {
+    width: 680px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2vh;
+    padding: 3px 6px;
+    
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    hyphens: auto;
+    line-height: 1.65;
+}
+.poweredby .text {
+    margin-right: 5px;    
+}
+.copyright {
+    position: fixed;
+    align-content: center;
+    text-align: center;
+    bottom: 6vh;
+    width: 680px;
 }
 main {
   align-content: center;
   box-sizing: border-box;
   display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   hyphens: auto;
   line-height: 1.65;
   margin: 0 auto;
-  max-width: 680px;
+  width: 680px;
   min-height: 100vh;
-  padding: 72px 0;
+  padding: 0;
   text-align: center;
 }
 h1 {
@@ -25,14 +56,17 @@ p {
   font-size: 16px;
 }
 a {
-  border-bottom: 1px solid white;
+  border-bottom: 0;
   color: #0076ff;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease;
 }
+a img {
+    opacity: 50%;
+}
 a:hover {
-  border-bottom: 1px solid #0076ff;
+  /*border-bottom: 1px solid #0076ff;*/
 }
 code,
 pre {

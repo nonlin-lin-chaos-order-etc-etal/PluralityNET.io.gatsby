@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { css as cssClass } from "emotion"
+import { css as cssClass } from "@emotion/css"
 import styled from "@emotion/styled"
 import { css } from "@emotion/react"
 import { MdLink } from "react-icons/md"
@@ -172,6 +172,7 @@ const ExternalLinkIcon = styled(MdLink)`
 const Navigation = () => (
   <header>
     <SiteTitle>
+      {/*
       <Link
         to="/"
         css={`
@@ -180,9 +181,11 @@ const Navigation = () => (
       >
         Using Gatsby Image
       </Link>
+      */}
     </SiteTitle>
     <Nav aria-label="Primary Navigation">
       <NavList>
+      {/*
         <NavItem to="/blur-up/" title="Blur Up" />
         <NavItem to="/background-color/" title="Background Color" />
         <NavItem to="/traced-svg/" title="Traced SVG" />
@@ -199,6 +202,7 @@ const Navigation = () => (
             <ExternalLinkIcon />
           </a>
         </NavListItem>
+      */}
       </NavList>
     </Nav>
   </header>

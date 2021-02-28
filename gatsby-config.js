@@ -40,5 +40,6 @@ module.exports = {
         //name: 'imagesStepOneYaml',
       },
     },
+    `gatsby-transformer-inline-svg`,
   ],
 };
