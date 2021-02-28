@@ -12,8 +12,6 @@ const BackgroundColor = ({ data, location }) => (
   >
     <PageTitle>Background Color</PageTitle>
     <FloatingImage
-      imageMobile={data.floatingImageMobile.localFile.childImageSharp.fixed}
-      imageDesktop={data.floatingImage.localFile.childImageSharp.fixed}
       title={`“${data.floatingImage.title}” by ${data.floatingImage.credit} (via namecheap.com)`}
       backgroundColor="#11CE3E"
     />
@@ -31,7 +29,6 @@ const BackgroundColor = ({ data, location }) => (
     </p>
 
     <Img
-      fluid={data.fullWidthImage.localFile.childImageSharp.fluid}
       backgroundColor="#11CE3E"
       title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit}`}
     />
