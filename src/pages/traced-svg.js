@@ -11,9 +11,9 @@ import Layout from "../components/layout"
 const TracedSVG = ({ data, location }) => (
   <Layout
     location={location}
-    image={data.coverImage.localFile.childImageSharp.fluid}
     imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit} (via namecheap.com)`}
   >
+  {/*
     <PageTitle>Traced SVG Placeholders</PageTitle>
     <FloatingImage
       imageMobile={data.floatingImageMobile.localFile.childImageSharp.fixed}
@@ -42,6 +42,7 @@ const TracedSVG = ({ data, location }) => (
       fluid={data.fullWidthImage.localFile.childImageSharp.fluid}
       title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit} (via namecheap.com)`}
     />
+  */}
   </Layout>
 )
 

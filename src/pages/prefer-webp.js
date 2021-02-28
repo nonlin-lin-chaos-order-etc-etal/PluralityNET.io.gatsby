@@ -9,9 +9,9 @@ import Layout from "../components/layout"
 const PreferWebp = ({ data, location }) => (
   <Layout
     location={location}
-    image={data.coverImage.localFile.childImageSharp.fluid}
     imageTitle={`“${data.coverImage.title}” by ${data.coverImage.credit} (via namecheap.com)`}
   >
+  {/*
     <PageTitle>Prefer WebP</PageTitle>
     <FloatingImage
       imageMobile={data.floatingImageMobile.localFile.childImageSharp.fixed}
@@ -36,6 +36,7 @@ const PreferWebp = ({ data, location }) => (
       title={`“${data.fullWidthImage.title}” by ${data.fullWidthImage.credit} (via namecheap.com)`}
     />
     <p />
+  */}
   </Layout>
 )
 
