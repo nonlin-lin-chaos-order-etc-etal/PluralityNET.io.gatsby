@@ -96,7 +96,7 @@ export const query = graphql`
         }
       }
     }
-    galleryImages: allimagesStepOneYaml(
+    galleryImages: allImagesStepOneYaml(
       filter: { gallery: { eq: true } }
       limit: 10
     ) {
@@ -118,7 +118,7 @@ export const query = graphql`
         }
       }
     }
-    galleryImagesCropped: allimagesStepOneYaml(
+    galleryImagesCropped: allImagesStepOneYaml(
       filter: { gallery: { eq: true } }
       skip: 10
     ) {
