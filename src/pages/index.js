@@ -19,7 +19,7 @@ function Index() {
         <title>PluralityNET</title>
       </Helmet>
       <LogoDefault/>
-      <hr noshade/>
+      <hr noshade="noshade"/>
       <p>Copyright © 2021, {date ? date : 'Loading date...'} PluralityNET.io. All Rights Reserved.</p>
     </main>
   );
