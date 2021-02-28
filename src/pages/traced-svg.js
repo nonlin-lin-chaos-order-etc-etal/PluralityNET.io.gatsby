@@ -49,7 +49,7 @@ export default TracedSVG
 
 export const query = graphql`
   query {
-    coverImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
+    coverImage: imagesStepOneYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -63,7 +63,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImageMobile: PluralityNETImagesYaml(
+    floatingImageMobile: imagesStepOneYaml(
       title: { eq: "icon" }
     ) {
       localFile {
@@ -74,7 +74,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
+    floatingImage: imagesStepOneYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -85,7 +85,7 @@ export const query = graphql`
         }
       }
     }
-    fullWidthImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
+    fullWidthImage: imagesStepOneYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -96,7 +96,7 @@ export const query = graphql`
         }
       }
     }
-    galleryImages: allPluralityNETImagesYaml(
+    galleryImages: allimagesStepOneYaml(
       filter: { gallery: { eq: true } }
       limit: 10
     ) {
@@ -118,7 +118,7 @@ export const query = graphql`
         }
       }
     }
-    galleryImagesCropped: allPluralityNETImagesYaml(
+    galleryImagesCropped: allimagesStepOneYaml(
       filter: { gallery: { eq: true } }
       skip: 10
     ) {

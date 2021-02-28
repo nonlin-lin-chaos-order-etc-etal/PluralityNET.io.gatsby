@@ -43,7 +43,7 @@ export default PreferWebp
 
 export const query = graphql`
   query {
-    coverImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
+    coverImage: imagesStepOneYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -54,7 +54,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImageMobile: PluralityNETImagesYaml(title: { eq: "icon" }) {
+    floatingImageMobile: imagesStepOneYaml(title: { eq: "icon" }) {
       localFile {
         childImageSharp {
           fixed(width: 120) {
@@ -63,7 +63,7 @@ export const query = graphql`
         }
       }
     }
-    floatingImage: PluralityNETImagesYaml(title: { eq: "icon" }) {
+    floatingImage: imagesStepOneYaml(title: { eq: "icon" }) {
       credit
       title
       localFile {
@@ -74,7 +74,7 @@ export const query = graphql`
         }
       }
     }
-    fullWidthImage: PluralityNETImagesYaml(title: { eq: "Tennis court" }) {
+    fullWidthImage: imagesStepOneYaml(title: { eq: "Tennis court" }) {
       credit
       title
       localFile {
