@@ -19,7 +19,7 @@ function Index() {
       </Helmet>
       <img src="/src/images/logo/vector/default.svg"/>
       <hr noshade/>
-      <p>Copyright © {date ? date : 'Loading date...'} PluralityNET.io. All Rights Reserved.</p>
+      <p>Copyright © 2021, {date ? date : 'Loading date...'} PluralityNET.io. All Rights Reserved.</p>
     </main>
   );
 }
