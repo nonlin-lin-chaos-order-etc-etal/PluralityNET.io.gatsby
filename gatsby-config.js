@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-source-remote-images`,
       options: {
-        //filter: node => node.internal.type === `name: '`,
+        filter: node => node.internal.type === `PluralityNETImagesYaml`,
         name: 'PluralityNETImagesYaml',
       },
     },
