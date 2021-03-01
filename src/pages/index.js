@@ -106,6 +106,11 @@ const Index = ({ data, location }) => {
         <Helmet>
             <title>PluralityNET</title>
             <link rel="icon" href={favicon} />
+            <meta property="og:url" content="https://PluralityNET.io/" />
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content="PluralityNET" />
+            <meta property="og:image" content={data.file.publicURL} />
+            <meta property="og:description" content="The PluralityNET project — an artificial brain integrating various AGI, AI, and non-AI systems in the world, including deep learning, machine learning and Big Data systems." />
         </Helmet>
         
         {/*<Image 
