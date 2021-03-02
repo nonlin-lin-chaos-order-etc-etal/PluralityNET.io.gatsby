@@ -88,7 +88,7 @@ const Index = ({ data, location }) => {
   }, []);
   */
   
-  const imageURL = "https://PluralityNET.io" + data.file.publicURL;
+  const imageURL = "https://pluralitynet.io" + data.file.publicURL;
 
   return (
    <main>
