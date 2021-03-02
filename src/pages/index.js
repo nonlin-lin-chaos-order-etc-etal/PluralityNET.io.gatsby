@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+//import React, { useEffect, useState } from 'react'; 
+import React from 'react'; 
 import Helmet from 'react-helmet'
 
 import favicon from '../images/favicon.ico'
@@ -154,7 +155,7 @@ export default Index
 export const query = graphql`{
   file(
     relativePath: {
-      eq: "images/logo/vector/default.svg"
+      eq: "images/logo/raster/default.png"
     }, 
     name: {glob: "*"}, 
     sourceInstanceName: {eq: "content"}
