@@ -41,6 +41,8 @@ const FeatureListItem = styled.li({
 })
 */
 
+var description = "The PluralityNET project — a community of GPLv3+ artificial brains integrating various world consensuses systems, plus AGI, AI, and non-AI systems in the world, including deep learning, machine learning and Big Data systems, and more.";
+
 //Gadsby Logo
 const LogoLink = styled(`a`)`
   /*position: fixed;*/
@@ -110,7 +112,7 @@ const Index = ({ data, location }) => {
             <meta property="og:type" content="article" />
             <meta property="og:title" content="PluralityNET" />
             <meta property="og:image" content={data.file.publicURL} />
-            <meta property="og:description" content="The PluralityNET project — a community of GPLv3+ artificial brains integrating various world consensuses systems, plus AGI, AI, and non-AI systems in the world, including deep learning, machine learning and Big Data systems." />
+            <meta property="og:description" content={description} />
         </Helmet>
         
         {/*<Image 
@@ -121,6 +123,8 @@ const Index = ({ data, location }) => {
         />*/}
         
         <Back src = {data.file.publicURL} alt = {`PluralityNET logo`} />
+
+        <p>{description}</p>
 
         {/*<p>
           See the
