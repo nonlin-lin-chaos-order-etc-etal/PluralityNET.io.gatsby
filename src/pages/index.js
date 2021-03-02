@@ -102,7 +102,7 @@ const Index = ({ data, location }) => {
             <meta property="og:url" content="https://PluralityNET.io/" />
             <meta property="og:type" content="article" />
             <meta property="og:title" content="PluralityNET" />
-            <meta property="og:image" content={imageURL} />
+            <meta property="og:image:url" content={imageURL} />
             {/*
             <meta property="og:image:width" content="512" />
             <meta property="og:image:height" content="512" />
