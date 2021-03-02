@@ -61,15 +61,13 @@ const LogoLink = styled(`a`)`
 //Gadsby Logo
 const Logo = styled(`img`)`
   padding: 0px 0px 6px 3px;
-  /*display: inline-block;*/
-  /*height: 27%;*/
   margin: 0;
   vertical-align: middle;
-  /*width: 27%;*/
 `
 
 const Back = styled.img`
   ${mq.tablet} {
+    width: 100%;
   }
   ${mq.xxl} {
     width: ${offsetXxl};
