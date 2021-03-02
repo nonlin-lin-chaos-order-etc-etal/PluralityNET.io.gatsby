@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'PluralityNET',
-        short_name: 'PluralityNET',
+        short_name: 'pnet',
         start_url: '/',
         icon: 'src/images/favicon.png',
       },
