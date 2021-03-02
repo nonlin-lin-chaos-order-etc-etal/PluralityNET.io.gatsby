@@ -76,6 +76,7 @@ const Back = styled.img`
 `
 
 const Index = ({ data, location }) => {
+  /*
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
@@ -85,12 +86,7 @@ const Index = ({ data, location }) => {
     }
     getDate();
   }, []);
-  /*return (
-    <main>
-      <Helmet>
-      </Helmet>
-    </main>
-  );*/
+  */
   return (
    <main>
     <Layout
