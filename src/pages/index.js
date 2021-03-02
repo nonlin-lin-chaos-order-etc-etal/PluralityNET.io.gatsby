@@ -45,39 +45,29 @@ var description = "The PluralityNET project — a community of intercommunicatin
 
 //Gadsby Logo
 const LogoLink = styled(`a`)`
-  /*position: fixed;*/
   line-height: 1;
   height: ${rhythm(0.875)};
   width: ${rhythm(0.875)};
   display: inline-block;
-  /*top: ${gutter.tablet};
-  right: ${gutter.tablet};
-  */
 
   && {
     background: transparent;
   }
 
   ${mq.tablet} {
-    bottom: ${gutter.tablet};
-    /*left: ${gutter.tablet};*/
-    top: auto;
-    /*z-index: ${elevation.overlay + 1};*/
   }
 `
 
 //Gadsby Logo
 const Logo = styled(`img`)`
   padding: 0px 0px 6px 3px;
-  /*display: inline-block;*/
-  /*height: 27%;*/
   margin: 0;
   vertical-align: middle;
-  /*width: 27%;*/
 `
 
 const Back = styled.img`
   ${mq.tablet} {
+    width: 100%;
   }
   ${mq.xxl} {
     width: ${offsetXxl};
@@ -101,10 +91,11 @@ const Index = ({ data, location }) => {
     </main>
   );*/
   return (
-   <Layout
-    location={location}
-    imageBackgroundColor={"#11CE3E"}
-   >
+   <main>
+    <Layout
+     location={location}
+     imageBackgroundColor={"#11CE3E"}
+    >
         <Helmet>
             <title>PluralityNET</title>
             <link rel="icon" href={favicon} />
@@ -153,7 +144,8 @@ const Index = ({ data, location }) => {
 
         <p class={`copyright`}>Copyright © 2021{/*, {date ? date : 'Loading date...'}*/} PluralityNET.io. All Rights Reserved.</p>
         <p class={`poweredby`}><span class={`text`}>Powered by</span><LogoLink href="https://www.gatsbyjs.com/"><Logo src={logo} alt="Gatsby"/></LogoLink></p>
-   </Layout>
+    </Layout>
+   </main>
   )
 };
 
