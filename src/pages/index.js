@@ -156,7 +156,7 @@ export default Index
 export const query = graphql`{
   file(
     relativePath: {
-      eq: "images/logo/vector/default.svg"
+      eq: "images/logo/raster/default.png"
     }, 
     name: {glob: "*"}, 
     sourceInstanceName: {eq: "content"}
