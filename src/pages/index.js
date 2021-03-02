@@ -87,6 +87,9 @@ const Index = ({ data, location }) => {
     getDate();
   }, []);
   */
+  
+  const imageURL = "https://PluralityNET.io" + data.file.publicURL;
+
   return (
    <main>
     <Layout
@@ -99,7 +102,7 @@ const Index = ({ data, location }) => {
             <meta property="og:url" content="https://PluralityNET.io/" />
             <meta property="og:type" content="article" />
             <meta property="og:title" content="PluralityNET" />
-            <meta property="og:image" content={data.file.publicURL} />
+            <meta property="og:image" content={imageURL} />
             <meta property="og:description" content={description} />
         </Helmet>
         
@@ -151,7 +154,7 @@ export default Index
 export const query = graphql`{
   file(
     relativePath: {
-      eq: "images/logo/raster/default.png"
+      eq: "images/logo/vector/default.svg"
     }, 
     name: {glob: "*"}, 
     sourceInstanceName: {eq: "content"}
