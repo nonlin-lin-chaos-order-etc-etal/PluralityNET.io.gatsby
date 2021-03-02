@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+//import React, { useEffect, useState } from 'react'; 
+import React from 'react'; 
 import Helmet from 'react-helmet'
 
 import favicon from '../images/favicon.ico'
@@ -75,6 +76,7 @@ const Back = styled.img`
 `
 
 const Index = ({ data, location }) => {
+  /*
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
@@ -84,12 +86,7 @@ const Index = ({ data, location }) => {
     }
     getDate();
   }, []);
-  /*return (
-    <main>
-      <Helmet>
-      </Helmet>
-    </main>
-  );*/
+  */
   return (
    <main>
     <Layout
@@ -154,7 +151,7 @@ export default Index
 export const query = graphql`{
   file(
     relativePath: {
-      eq: "images/logo/vector/default.svg"
+      eq: "images/logo/raster/default.png"
     }, 
     name: {glob: "*"}, 
     sourceInstanceName: {eq: "content"}
