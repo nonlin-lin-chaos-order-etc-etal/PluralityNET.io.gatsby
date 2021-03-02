@@ -41,7 +41,7 @@ const FeatureListItem = styled.li({
 })
 */
 
-var description = "The PluralityNET project — a community of GPLv3+ artificial brains integrating various world consensuses systems, plus AGI, AI, and non-AI systems in the world, including deep learning, machine learning and Big Data systems, and more.";
+var description = "The PluralityNET project — a community of intercommunicating GPLv3+ artificial brains or artificial organisms integrating and talking with various world consensuses systems, plus AGI, AI, and non-AI systems in the world, including deep learning, machine learning and Big Data systems, and more.";
 
 //Gadsby Logo
 const LogoLink = styled(`a`)`
