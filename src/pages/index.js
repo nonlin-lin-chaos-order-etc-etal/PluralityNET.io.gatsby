@@ -42,12 +42,12 @@ const FeatureListItem = styled.li({
 })
 */
 
-var description = "The PluralityNET project — a community of intercommunicating GPLv3+ artificial brains or artificial organisms integrating and talking with various world consensuses systems, plus AGI, AI, and non-AI systems in the world, including deep learning, machine learning and Big Data systems, and more.";
+var description = "The PluralityNET project — a community of intercommunicating GPLv3+ artificial brains or artificial organisms integrating and talking with various world consensuses systems, plus AGI, AI, and non-AI systems in the world, including deep learning, machine learning and Big Data systems, and more. We impose an additional constraint of Madhyamapratipada, which means a Golden Middle or Golden Ratio in sanskrit. That is, we reject both ends: we reject nihilism (we think about depression and suicides as about diseases, as about nullish extremism or negative extremism), and we reject a maximally heavy painful extremism (maximalism), including extremisms of wars and manias. Like that.";
 
 //Gadsby Logo
 const LogoLink = styled(`a`)`
   line-height: 1;
-  height: ${rhythm(0.875)};
+  height: ${rhythm(0.275)}; /*0.875*/
   width: ${rhythm(0.875)};
   display: inline-block;
 
